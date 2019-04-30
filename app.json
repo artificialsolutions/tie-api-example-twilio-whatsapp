@@ -1,0 +1,18 @@
+{
+    "name": "tie-api-example-twilio-whatsapp",
+    "description": "Make your Teneo bot available on Whatsapp or SMS using the Twilio Programmable SMS api.",
+    "keywords": [
+        "bot",
+        "Twilio",
+        "Whatsapp",
+        "SMS",
+        "Teneo"
+    ],
+    "repository": "https://github.com/artificialsolutions/tie-api-example-twilio-whatsapp",
+    "env": {    
+        "TENEO_ENGINE_URL": {
+            "description": "Please input your Teneo Engine URL. https://some.engine/instance/",
+            "required":true
+        }
+    }
+}
