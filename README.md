@@ -34,32 +34,32 @@ When using ngrok, make the connector available via https:
     ```
     ngrok http 1337
     ```
-2. Running the command above will display a public https URL, copy it, we will use it as a `Webhook URL` for the following steps.
+2. Running the command above will display a public https URL, copy it, we will use it in the following steps.
 
 
 ### Setup a Twilio WhatsApp phone number
 1. Setup a free [Twilio](https://www.twilio.com/try-twilio) account, which comes with free credit money you can spend on buying a number.
 2. Go to the left pane menu and click the **Programmable SMS** item, then from the submenu choose **WhatsApp**.
 3. Follow the instructions in the 'Learn' submenu to set up your testing sandbox by sending a specific WhatsApp message provided on the page to the phone number provided on the page. 
-4. Next, in the 'Sandbox' submenu add your Webhook URL to the "When a message comes in" field. Hit save to save your changes.
+4. Next, in the 'Sandbox' submenu add the https URL you copied earlier to the "When a message comes in" field. Hit save at the bottom of the page.
 
 
 That's it! Now you can use WhatsApp to interact with your bot!
 
 
 ## Running the connector on Heroku
-
 Click the button below to deploy the connector to Heroku:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg?classes=noborder)](https://heroku.com/deploy?template=https://github.com/artificialsolutions/tie-api-example-twilio-ivr)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg?classes=noborder)](https://heroku.com/deploy?template=https://github.com/artificialsolutions/tie-api-example-twilio-whatsapp)
 
 In the 'Config Vars' section, add the following:
 * **TENEO_ENGINE_URL:** The engine url
 
 
-Next, follow the Twilio Setup instructions above. Make sure that in the step 4 you set the Webhook URL to the url of the Heroku app.
+Next, follow the Twilio Setup instructions above. Make sure that in the step 4 you set the "When a message comes in" URL to the url of the Heroku app.
+
 
 ## Twilio API for WhatsApp
-The Twilio API for Whatsapp is currently in beta. For more details, visit the Twilio website: [Twilio API for WhatsApp](https://www.twilio.com/docs/sms/whatsapp/api)
+The Twilio API for Whatsapp is currently in beta. For more details, visit the Twilio website: [Twilio API for WhatsApp](https://www.twilio.com/docs/sms/whatsapp/api).
 
 
