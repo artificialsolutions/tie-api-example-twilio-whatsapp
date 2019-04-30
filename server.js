@@ -34,7 +34,7 @@ const sessionHandler = SessionHandler();
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // twilio message comes in
-app.post("/sms", handleTwilioMessages(sessionHandler));
+app.post("/", handleTwilioMessages(sessionHandler));
 
 // handle incoming twilio message
 function handleTwilioMessages(sessionHandler) {
