@@ -20,7 +20,7 @@ const bodyParser = require('body-parser');
 const MessagingResponse = require('twilio').twiml.MessagingResponse;
 const TIE = require('@artificialsolutions/tie-api-client');
 
-const port = process.env.PORT || 1337;
+const port = process.env.PORT || 4337;
 const teneoEngineUrl = process.env.TENEO_ENGINE_URL;
 
 const app = express();

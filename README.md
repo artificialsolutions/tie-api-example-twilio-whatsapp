@@ -1,7 +1,5 @@
 # tie-api-example-twilio-whatsapp
-Make your Teneo bot available on WhatsApp or SMS using the Twilio Programmable SMS api.
-
-This node.js example connector allows you to make your Teneo bot available on Twilio IVR (Interactive Voice Response). The connector acts as middleware between Twilio IVR API and Teneo to establish a phone call with a Teneo bot. This guide will take you through the steps of setting a new Twilio phone number and deploying the connector to respond to events sent by Twilio.
+This node.js example connector allows you to make your Teneo bot available on WhatsApp and SMS using the Twilio Programmable SMS API. This guide will take you through the steps of setting a new Twilio WhatsApp sandbox phone number and deploying the connector to respond to messages sent using WhatsApp.
 
 
 ## Prerequisites
@@ -28,11 +26,11 @@ Your bot needs to be published and you need to know the engine url.
     ```
 
 ### Make the connector available via https
-When using ngrok, make the connector available via https:
+You can make your locally running connector available via https using ngrok as follows:
 
-1. Make sure your connector is available via https. When running locally you can for example use [ngrok](https://ngrok.com) for this. Run the connector on port 1337 by default.
+1. The connector runs on port 4337 by default, so execute the following command:
     ```
-    ngrok http 1337
+    ngrok http 4337
     ```
 2. Running the command above will display a public https URL, copy it, we will use it in the following steps.
 
@@ -50,7 +48,7 @@ That's it! Now you can use WhatsApp to interact with your bot!
 ## Running the connector on Heroku
 Click the button below to deploy the connector to Heroku:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg?classes=noborder)](https://heroku.com/deploy?template=https://github.com/artificialsolutions/tie-api-example-twilio-whatsapp)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg?classes=heroku)](https://heroku.com/deploy?template=https://github.com/artificialsolutions/tie-api-example-twilio-whatsapp)
 
 In the 'Config Vars' section, add the following:
 * **TENEO_ENGINE_URL:** The engine url
