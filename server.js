@@ -28,7 +28,7 @@ const app = express();
 // initalise teneo
 const teneoApi = TIE.init(teneoEngineUrl);
 
-// initialise session handler, to store mapping between twillio from number and engine session id
+// initialise session handler, to store mapping between sender's phone number and the engine session id
 const sessionHandler = SessionHandler();
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -52,7 +52,7 @@ function handleTwilioMessages(sessionHandler) {
     const teneoSessionId = sessionHandler.getSession(from);
 
     // send input to engine using stored sessionid and retreive response
-    const teneoResponse = await teneoApi.sendInput(teneoSessionId, { 'text': userInput, 'channel': 'twilio-sms' });
+    const teneoResponse = await teneoApi.sendInput(teneoSessionId, { 'text': userInput, 'channel': 'twilio-whatsapp' });
     console.log(`teneoResponse: ${teneoResponse.output.text}`)
 
     // store engine sessionid for this sender
@@ -63,7 +63,7 @@ function handleTwilioMessages(sessionHandler) {
   }
 }
 
-
+// compose and send message
 function sendTwilioMessage(teneoResponse, res) {
 
   const message = teneoResponse.output.text;
@@ -81,7 +81,7 @@ function sendTwilioMessage(teneoResponse, res) {
  ***/
 function SessionHandler() {
 
-  // Map the Twilio sender's phone number to the teneo engine session id. 
+  // Map the sender's phone number to the teneo engine session id. 
   // This code keeps the map in memory, which is ok for testing purposes
   // For production usage it is advised to make use of more resilient storage mechanisms like redis
   const sessionMap = new Map();
