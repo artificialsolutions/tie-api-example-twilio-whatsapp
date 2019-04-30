@@ -59,7 +59,7 @@ In the 'Config Vars' section, add the following:
 
 Next, follow the Twilio Setup instructions above. Make sure that in the step 4 you set the Webhook URL to the url of the Heroku app.
 
-
-> The Twilio API for Whatsapp is currently in beta. For more details, visit the Twilio website: [Twilio API for WhatsApp](https://www.twilio.com/docs/sms/whatsapp/api)
+## Twilio API for WhatsApp
+The Twilio API for Whatsapp is currently in beta. For more details, visit the Twilio website: [Twilio API for WhatsApp](https://www.twilio.com/docs/sms/whatsapp/api)
 
 
