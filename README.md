@@ -1,7 +1,7 @@
 # tie-api-example-twilio-whatsapp
 This node.js example connector allows you to make your Teneo bot available on WhatsApp using the [Twilio API for WhatsApp](https://www.twilio.com/whatsapp). This guide will take you through the steps of setting up a Twilio WhatsApp sandbox phone number and deploying the connector so it can respond to messages sent using WhatsApp.
 
-> Note that the Twilio API for WhatsApp is currently in Beta is subject to change before becoming generally available.
+> Note that the Twilio API for WhatsApp is currently in Beta and is subject to change before becoming generally available.
 
 ## Prerequisites
 ### Https
