@@ -36,11 +36,14 @@ You can make your locally running connector available via https using ngrok as f
 
 ### Setup a Twilio WhatsApp phone number
 1. Setup a free [Twilio](https://www.twilio.com/try-twilio) account, which comes with free credit money you can spend on buying a number.
-2. Go to the left pane menu and click the **Programmable SMS** item, then from the submenu choose **WhatsApp**.
-3. Follow the instructions in the **Learn** submenu to set up your testing sandbox by sending a specific WhatsApp message provided on the page to the phone number provided on the page. 
-4. Next, in the **Sandbox** submenu add the https URL you copied earlier to the **When a message comes in** field. Hit save at the bottom of the page.
 
-That's it! Now you can use WhatsApp to interact with your bot!
+3. Go to the left panel menu and click the **Programmable Messaging** item, then from the submenu choose **Try it Out > Try Whatsapp**. 
+
+3. Follow the 5-step process to setup communication between Twilio Sandbox and WhatsApp on your phone.
+
+4. Next, in **Programmable Messaging > Settings > Whatsapp Sandbox Settings** submenu, add the https URL you copied earlier to the **When a message comes in** field. Hit save at the bottom of the page.
+
+That's it! Now you can use the WhatsApp sandbox to interact with your bot!
 
 ## Running the connector on Heroku
 Click the button below to deploy the connector to Heroku:
