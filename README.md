@@ -37,7 +37,7 @@ You can make your locally running connector available via https using ngrok as f
 ### Setup a Twilio WhatsApp phone number
 1. Setup a free [Twilio](https://www.twilio.com/try-twilio) account, which comes with free credit money you can spend on buying a number.
 
-3. Go to the left panel menu and click the **Programmable Messaging** item, then from the submenu choose **Try it Out > Try Whatsapp**. 
+2. Go to the left panel menu and click the **Programmable Messaging** item, then from the submenu choose **Try it Out > Try Whatsapp**. 
 
 3. Follow the 5-step process to setup communication between Twilio Sandbox and WhatsApp on your phone.
 
