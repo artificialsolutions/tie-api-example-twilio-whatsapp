@@ -46,6 +46,9 @@ You can make your locally running connector available via https using ngrok as f
 That's it! Now you can use the WhatsApp sandbox to interact with your bot!
 
 ## Running the connector on Heroku
+
+**Note: Starting November 28, 2022, free Heroku Dynos, free Heroku Postgres, and free Heroku Data for Redis® plans will no longer be available.**
+
 Click the button below to deploy the connector to Heroku:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg?classes=heroku)](https://heroku.com/deploy?template=https://github.com/artificialsolutions/tie-api-example-twilio-whatsapp)
